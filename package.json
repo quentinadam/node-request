@@ -1,0 +1,19 @@
+{
+  "name": "@quentinadam/request",
+  "version": "0.0.2",
+  "author": "Quentin Adam",
+  "description": "",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.js",
+  "dependencies": {
+    "@quentinadam/request-core": "0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^10.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quentinadam/node-request.git"
+  }
+}
