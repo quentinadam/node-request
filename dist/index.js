@@ -1,7 +1,6 @@
 "use strict";
 const request_core_1 = require("@quentinadam/request-core");
 const wrapper = new request_core_1.Wrapper(({ url, method, headers, body, gzip, timeout }) => {
-    console.log(url);
     const responseHandler = new request_core_1.ResponseHandler({ gzip });
     const requester = new request_core_1.Requester(responseHandler);
     requester.request({ url, method, headers, body, timeout });
