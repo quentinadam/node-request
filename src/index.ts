@@ -1,12 +1,20 @@
-import { Result, Params, Wrapper, ResponseHandler, Requester } from '@quentinadam/request-core';
+import BaseRawRequest, { RawParams } from './BaseRawRequest';
+import AbstractRequest, { Params } from './AbstractRequest';
+import Body from './Body';
+import Headers from './Headers';
+import RawRequest from './RawRequest';
+import Request from './Request';
+import Result from './Result';
 
-const wrapper = new Wrapper(({url, method, headers, body, gzip, timeout}) => {
-  const responseHandler = new ResponseHandler({gzip});
-  const requester = new Requester(responseHandler);
-  requester.request({url, method, headers, body, timeout});
-  return responseHandler.result;
-});
+export default Request;
 
-export = function (params: Params): Promise<Result> {
-  return wrapper.request(params);
-}
+export { 
+  BaseRawRequest,
+  AbstractRequest,
+  Body,
+  Headers,
+  Params,
+  RawParams,
+  RawRequest,
+  Result,
+};
