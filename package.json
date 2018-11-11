@@ -1,6 +1,6 @@
 {
   "name": "@quentinadam/request",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Quentin Adam",
   "description": "",
   "license": "MIT",
@@ -10,7 +10,8 @@
     "iconv-lite": "^0.4.24"
   },
   "devDependencies": {
-    "@types/node": "^10.11.7"
+    "@types/node": "^10.12.5",
+    "typescript": "^3.1.6"
   },
   "repository": {
     "type": "git",
