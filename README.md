@@ -1,4 +1,4 @@
-# Request - Simplified HTTP client
+# Request
 
 ## Examples
 
@@ -27,7 +27,7 @@ import Request from '@quentinadam/request';
   try {
     const {statusCode, headers, body} = await (new Request({
       url: 'http://www.example.com/users',
-      method: 'POST,
+      method: 'POST',
       form: {
         name: 'Bill',
         age: '38'
