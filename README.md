@@ -57,7 +57,7 @@ import Request from '@quentinadam/request';
  - ```keepAlive``` ```<boolean? = true>``` (optional) adds a ```connection: keep-alive``` header and keeps the TCP connection option (defaults to ```true```)
  - ```gzip``` ```<boolean? = true>``` (optional) adds a ```accept-encoding: gzip``` header and decodes the gzip response (defaults to ```true```)
  
- ### request.execute(): Promise<{statusCode, statusMessage, headers, body}>
+### request.execute(): Promise<{statusCode, statusMessage, headers, body}>
  
 Executes the request.
 
@@ -66,7 +66,7 @@ Executes the request.
  - ```headers``` ```<http.IncomingHttpHeaders>```
  - ```body``` ```<Body>```
  
- ## Class Body
+## Class Body
 
 ### body.toString(): string
 
