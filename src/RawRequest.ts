@@ -1,5 +1,6 @@
 import * as http from 'http';
 import * as https from 'https';
+import { URL } from 'url';
 import BaseRawRequest, { RawParams } from './BaseRawRequest';
 
 export default class RawRequest extends BaseRawRequest {
